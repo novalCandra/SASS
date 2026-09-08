@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+$fontFamily-Inter : "Inter",
+sans-serif;
+$fontWeightInter-400 : 400;
+$fontWeightInter-500 : 500;
+$color-blue-200 : hsl(224, 100%, 95%);
+$color-blue-400 : hsl(220, 100%, 64%);
+$color-blue-600 : hsl(228, 100%, 60%);
+$color-blue-700 : hsl(228, 99%, 58%);
+$color-black : hsl(0, 0%, 0%);
+$color-white : hsl(0, 0%, 100%);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    font-family: $fontFamily-Inter;
+    background-color: $color-blue-700;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 5rem;
+        color: $color-white;
+        height: 4rem;
+        border-bottom: 1px solid $color-blue-200;
+
+        @media screen and (max-width : 375px) {
+            padding: 1rem;
+        }
+
+        .right {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 0.5rem;
+
+            div {
+                height: 10px;
+                width: 10px;
+                border-radius: 50%;
+                background-color: $color-white;
+            }
+
+            h2 {
+                font-size: 1.2rem;
+            }
+        }
+    }
+
+    .hero {
+        display: flex;
+        flex: 1;
+        flex-direction: row;
+        width: 100%;
+        gap: 1rem;
+
+        @media screen and (max-width : 375px) {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 52rem;
+        }
+
+        .hero-right {
+            width: 96%;
+            height: 100%;
+
+            .content-right {
+                width: 100%;
+                height: 80vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                @media screen and (max-width : 375px) {
+                    display: flex;
+                    width: 100%;
+                    gap: 1rem;
+                    height: 40vh;
+                    padding: 1rem;
+                    flex-direction: column;
+                }
+
+                .judul-hero {
+                    color: white;
+                    width: 30rem;
+                    font-size: 3rem;
+
+                    @media screen and (max-width : 375px) {
+                        width: 20rem;
+                        font-size: 2.5rem;
+                    }
+
+                    font-weight: $fontWeightInter-400;
+                }
+
+                .description-hero {
+                    color: $color-blue-200;
+                    opacity: 0.8;
+                    width: 30rem;
+
+                    @media screen and (max-width : 375px) {
+                        width: 20rem;
+                    }
+
+                    letter-spacing: 2px;
+                    font-weight: $fontWeightInter-400;
+                }
+            }
+        }
+
+        .hero-left {
+            width: 100%;
+
+            .content-left {
+                height: 400px;
+                cursor: pointer;
+                display: grid;
+                grid-template-columns: auto auto;
+
+                @media screen and (max-width : 375px) {
+                    border-top: 1px solid $color-blue-200;
+                    display: grid;
+                    grid-template-columns: auto;
+                }
+
+                .contentOne {
+                    display: flex;
+                    flex-direction: column;
+                    width: 32rem;
+                    height: 379px;
+                    padding: 12px;
+                    justify-content: space-between;
+                    border-left: 1px solid $color-blue-200;
+                    border-bottom: 1px solid $color-blue-200;
+
+                    @media screen and (max-width : 375px) {
+                        width: 100%;
+                        height: 20rem;
+                        padding: 12px;
+                    }
+
+                    .header-content {
+                        display: flex;
+                        flex-direction: row;
+                        color: $color-white;
+                        justify-content: space-between;
+                        align-items: center;
+
+                        .judul-contents {
+                            font-size: 2rem;
+                        }
+                    }
+
+                    .footer-content {
+                        .footer-judul {
+                            color: $color-blue-200;
+                            font-size: 1rem;
+                            font-weight: $fontWeightInter-500;
+                        }
+
+                        p {
+                            color: $color-white;
+                            opacity: 0.7;
+                        }
+                    }
+                }
+
+                .contentOne:hover {
+                    cursor: pointer;
+                    transition: 0.3s ease;
+                    background-color: $color-blue-400;
+                    opacity: 0.9;
+                }
+            }
+        }
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 3rem;
+        height: 10px;
+        border-top: 1px solid $color-blue-200;
+ 
+        @media screen and (max-width : 375px) {
+            position: relative;
+            bottom: -100vh;
+            margin-top: 12px;
+            display: flex;
+            justify-content: start;
+            border-top: none;
+            align-items: start;
+            padding: 3rem 1rem;
+            gap: 12px;
+            flex-direction: column;
+        }
+
+        h2 {
+            color: white;
+            font-size: 17px;
+            text-align: start;
+            font-weight: $fontWeightInter-500;
+        }
+
+        span {
+            color: white;
+            font-size: 17px;
+            font-weight: $fontWeightInter-500;
+        }
+    }
+}
