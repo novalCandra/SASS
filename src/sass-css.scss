@@ -38,7 +38,7 @@ body {
         height: 4rem;
         border-bottom: 1px solid $color-blue-200;
 
-        @media screen and (max-width : 375px) {
+        @media (max-width : 640px) {
             padding: 1rem;
         }
 
@@ -68,7 +68,7 @@ body {
         width: 100%;
         gap: 1rem;
 
-        @media screen and (max-width : 375px) {
+        @media (max-width : 640px) {
             display: flex;
             flex-direction: column;
             width: 100%;
@@ -87,7 +87,7 @@ body {
                 justify-content: center;
                 align-items: center;
 
-                @media screen and (max-width : 375px) {
+                @media (max-width : 640px) {
                     display: flex;
                     width: 100%;
                     gap: 1rem;
@@ -101,7 +101,7 @@ body {
                     width: 30rem;
                     font-size: 3rem;
 
-                    @media screen and (max-width : 375px) {
+                    @media (max-width : 640px) {
                         width: 20rem;
                         font-size: 2.5rem;
                     }
@@ -114,7 +114,7 @@ body {
                     opacity: 0.8;
                     width: 30rem;
 
-                    @media screen and (max-width : 375px) {
+                    @media (max-width : 640px) {
                         width: 20rem;
                     }
 
@@ -133,7 +133,7 @@ body {
                 display: grid;
                 grid-template-columns: auto auto;
 
-                @media screen and (max-width : 375px) {
+                @media (max-width : 640px) {
                     border-top: 1px solid $color-blue-200;
                     display: grid;
                     grid-template-columns: auto;
@@ -142,14 +142,14 @@ body {
                 .contentOne {
                     display: flex;
                     flex-direction: column;
-                    width: 32rem;
-                    height: 379px;
+                    width: 30rem;
+                    height: 24.4rem;
                     padding: 12px;
                     justify-content: space-between;
                     border-left: 1px solid $color-blue-200;
                     border-bottom: 1px solid $color-blue-200;
 
-                    @media screen and (max-width : 375px) {
+                    @media (max-width : 640px) {
                         width: 100%;
                         height: 20rem;
                         padding: 12px;
@@ -200,7 +200,7 @@ body {
         height: 10px;
         border-top: 1px solid $color-blue-200;
  
-        @media screen and (max-width : 375px) {
+        @media (max-width : 640px) {
             position: relative;
             bottom: -100vh;
             margin-top: 12px;
